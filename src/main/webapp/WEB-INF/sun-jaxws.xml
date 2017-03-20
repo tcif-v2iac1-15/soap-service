@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/jax-ws/ri/runtime
+    	 	http://docs.oracle.com/cd/E17802_01/webservices/webservices/docs/2.0/jaxws/sun-jaxws.xsd"
+	xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+	<endpoint name="power" implementation="nl.hu.iac.soap.impl.PowerServiceImpl"
+		url-pattern="/soap" />
+</endpoints>

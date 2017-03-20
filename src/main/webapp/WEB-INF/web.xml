@@ -2,6 +2,21 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
+
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<display-name>Archetype Created Web Application</display-name>
+    <listener>
+    	<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+    </listener>
+    <servlet>
+    	<servlet-name>jaxws-soap</servlet-name>
+    	<display-name>The JAX-WS servlet</display-name>
+    	<description>JAX-WS endpoint</description>
+    	<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>jaxws-servlet</servlet-name>
+		<url-pattern>/soap</url-pattern>
+	</servlet-mapping>
 </web-app>
