@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://nl.hu.iac/powerservice/request"
+	xmlns:pow="http://nl.hu.iac/powerservice/powerTypes"
+	elementFormDefault="qualified" targetNamespace="http://nl.hu.iac/powerservice/request">
+
+	<!-- root element -->
+	<xs:element name="powerRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="x" type="xs:positiveInteger" />
+				<xs:element name="power" type="xs:positiveInteger" />
+			</xs:sequence>
+		</xs:complexType>
+
+	</xs:element>
+</xs:schema>

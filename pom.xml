@@ -38,6 +38,33 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.jvnet.jax-ws-commons</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<id>wsimport-from-jdk</id>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+						<configuration>
+							<!--wsdls file directory -->
+							<wsdlDirectory>src/main/webapp/WEB-INF/wsdl/</wsdlDirectory>
+							<!-- which wsdl file -->
+							<wsdlFiles>
+								<wsdlFile>powerservice.wsdl</wsdlFile>
+							</wsdlFiles>
+							<!-- Keep generated files -->
+							<keep>true</keep>
+							<!-- Package name -->
+							<packageName>nl.hu.iac.soap.wsinterface</packageName>
+							<!-- generated source files destination -->
+							<sourceDestDir>target/generated</sourceDestDir>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
