@@ -16,7 +16,7 @@
     </servlet>
 
 	<servlet-mapping>
-		<servlet-name>jaxws-servlet</servlet-name>
+		<servlet-name>jaxws-soap</servlet-name>
 		<url-pattern>/soap</url-pattern>
 	</servlet-mapping>
 </web-app>
