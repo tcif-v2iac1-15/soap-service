@@ -53,7 +53,7 @@
 	</wsdl:binding>
 	<wsdl:service name="powerServiceService">
 		<wsdl:port name="WS-Port" binding="powerServiceBinding">
-			<soap:address location="http://localhost:8080/ws-producer/soap"/>
+			<soap:address location="http://localhost:8080/soap-service/soap"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
